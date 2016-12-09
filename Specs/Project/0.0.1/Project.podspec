@@ -33,9 +33,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '7.0'
 
   # 
-  s.source_files = 'Demo/Demo/Tools/*.{h,m}'
+  #s.source_files = 'Demo/Demo/Tools/*.{h,m}'
       
-  
+  s.subspec 'Tools' do |ss|
+      ss.source_files = 'Demo/Demo/Tools/*.{h,m}'
+      
+  end
   
 
   
